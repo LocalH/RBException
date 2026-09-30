@@ -61,7 +61,7 @@ public class XeContext
 {
     private static int NumGpr = 32;
     private static int NumFpr = 32;
-    private static int NumVr = 128;
+    // private static int NumVr = 128;
 
     public uint ContextFlags;
     public uint Msr;

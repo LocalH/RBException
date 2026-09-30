@@ -23,9 +23,19 @@ FileStream fs = File.OpenRead(args[0]);
 ExceptionRB3E_Xbox exc = ExceptionRB3E_Xbox.LoadExceptionFile(fs);
 fs.Close();
 
-// read symbol table
-if (File.Exists("rb3_xbox_tu5.csv"))
-    SymbolTable.LoadSymbols("rb3_xbox_tu5.xex", File.ReadAllLines("rb3_xbox_tu5.csv"));
+// read symbol tables
+string gameSymbols = "rb3_xbox_tu5.csv";
+string kernelSymbols = "xboxkrnl_17559.csv"; //just assume anyone is on 17559, change this if we include kernel version
+if (File.Exists(gameSymbols))
+    SymbolTable.LoadSymbols("rb3_xbox_tu5.xex", File.ReadAllLines(gameSymbols));
+if (File.Exists(kernelSymbols))
+    SymbolTable.LoadSymbols("xboxkrnl_17559.exe", File.ReadAllLines(kernelSymbols));
+// this takes in user input so be a bit more careful
+string? modSymbols = null;
+if (exc.Header.Commit.IndexOf(".:<>\"|?*/\\\0") == -1 && !exc.Header.Commit.EndsWith("-dirty"))
+    modSymbols = $"rb3e_syms_{exc.Header.Commit}.csv";
+if (modSymbols != null && File.Exists(modSymbols))
+    SymbolTable.LoadSymbols($"RB3Enhanced_{exc.Header.Commit}.dll", File.ReadAllLines(modSymbols));
 
 Console.WriteLine($"RB3Enhanced (Xbox) {exc.Header.BuildTag} ({exc.Header.Commit})");
 // TODO: parse the specific NT exception code type and display more information

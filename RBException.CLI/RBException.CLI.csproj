@@ -11,4 +11,10 @@
     <ProjectReference Include="..\RBException\RBException.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="rb3_xbox_tu5.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

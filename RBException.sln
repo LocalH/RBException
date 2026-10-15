@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 18
+VisualStudioVersion = 18.12.12308.306 insiders
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBException", "RBException\RBException.csproj", "{DB13913F-E834-4BE5-94C8-504FD57F46E4}"
 EndProject
@@ -17,8 +17,8 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Debug|x64.Build.0 = Debug|Any CPU
 		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -29,8 +29,8 @@ Global
 		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Release|x64.Build.0 = Release|Any CPU
 		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Release|x86.ActiveCfg = Release|Any CPU
 		{DB13913F-E834-4BE5-94C8-504FD57F46E4}.Release|x86.Build.0 = Release|Any CPU
-		{B4022D0E-7D8B-4401-823F-576F711BCF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4022D0E-7D8B-4401-823F-576F711BCF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4022D0E-7D8B-4401-823F-576F711BCF2D}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{B4022D0E-7D8B-4401-823F-576F711BCF2D}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{B4022D0E-7D8B-4401-823F-576F711BCF2D}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{B4022D0E-7D8B-4401-823F-576F711BCF2D}.Debug|x64.Build.0 = Debug|Any CPU
 		{B4022D0E-7D8B-4401-823F-576F711BCF2D}.Debug|x86.ActiveCfg = Debug|Any CPU
